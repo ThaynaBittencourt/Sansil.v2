@@ -10,17 +10,8 @@
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-install": "^1.1.0",
-<<<<<<< HEAD
-    "gulp-open": "^3.0.1",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4"
-  },
-  "dependencies": {
-    "paper-kit": "file:"
-=======
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-open": "^3.0.1"
->>>>>>> 96ad4f474dc9c1a9aadc80d65cc2274451d3bbd6
   }
 }
