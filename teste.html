@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preencher Input ao Clicar na Imagem</title>
+    <style>
+      img {
+        width: 100px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Clique na imagem para preencher o campo</h2>
+
+    <img src="img/Eli.jpg" alt="Imagem Exemplo" id="imagem" />
+
+    <br /><br />
+
+    <input type="text" id="meuInput" placeholder="Clique na imagem" />
+
+    <script>
+      document.getElementById("imagem").addEventListener("click", function () {
+        document.getElementById("meuInput").value = "Texto preenchido!";
+      });
+    </script>
+  </body>
+</html>

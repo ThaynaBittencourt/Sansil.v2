@@ -17,13 +17,14 @@
 
       body {
         width: 100%;
-        font-family: Arial, sans-serif;
+        font-family: "Montserrat", "Helvetica", Arial, sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: #252525;
-        padding: 20px;
+        /* padding: 20px; */
+        margin-block: 75px;
       }
 
       div {
@@ -32,9 +33,11 @@
       }
 
       img {
-        width: 63%;
+        width: 95%;
         margin: 0 auto;
         display: block;
+        margin-block: 50px;
+        border-radius: 10px;
       }
 
       .agendamento {
@@ -142,13 +145,49 @@
       .button {
         font-family: "Montserrat", "Helvetica", Arial, sans-serif;
       }
+
+      /* img select */
+
+      imagem2 {
+        width: 100px;
+        cursor: pointer;
+      }
+
+      img1 {
+        display: flex;
+        justify-content: center;
+        width: 1000px;
+      }
+
+      .img1:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+      }
     </style>
   </head>
 
   <body>
-    <div>
-      <img src="../img/logo 001.png" alt="Logo" />
+    <label for="profissional">Escolha o profissional:</label>
+    <div style="display: flex; justify-content: center" class="">
+      <div style="width: 100px">
+        <img src="../img/Eli.jpg" alt="Eli" id="imagem1" class="img1" />
+      </div>
+      <div style="width: 100px">
+        <img src="../img/Frank.jpg" alt="Frank" id="imagem2" class="img1" />
+      </div>
+      <div style="width: 100px">
+        <img src="../img/MIchael.jpg" alt="Michael" id="imagem3" class="img1" />
+      </div>
+      <div style="width: 100px">
+        <img src="../img/Rafa.jpg" alt="Rafa" id="imagem4" class="img1" />
+      </div>
+      <div style="width: 100px">
+        <img src="../img/ângelo.jpg" alt="Ângelo" id="imagem5" class="img1" />
+      </div>
     </div>
+    <!-- <div>
+      <img src="../img/logo 001.png" alt="Logo" />
+    </div> -->
     <!-- <div class="moving-clouds" style="background-image: url('assets/img/clouds.png');"></div> -->
     <div class="agendamento">
       <form action="/agendar" method="POST" class="card-body">
@@ -162,13 +201,20 @@
         <input type="tel" id="telefone" name="telefone" required />
 
         <label for="profissional">Escolha o profissional:</label>
-        <select id="profissional" name="profissional" required>
+        <input
+          type="text"
+          style="background-color: #fff"
+          id="imgSelector"
+          readonly
+          disabled
+        />
+        <!-- <select id="profissional" name="profissional" required>
           <option value="Frank">Frank</option>
           <option value="Michael">Michael</option>
           <option value="Eli">Eli</option>
           <option value="Rafa">Rafa</option>
           <option value="Ângelo">Ângelo</option>
-        </select>
+        </select> -->
 
         <label for="data">Data do agendamento:</label>
         <input type="date" id="data" name="data" required />
@@ -191,5 +237,23 @@
         <button type="submit">Confirmar Agendamento</button>
       </form>
     </div>
+
+    <script>
+      document.getElementById("imagem1").addEventListener("click", function () {
+        document.getElementById("imgSelector").value = "Eli";
+      });
+      document.getElementById("imagem2").addEventListener("click", function () {
+        document.getElementById("imgSelector").value = "Frank";
+      });
+      document.getElementById("imagem3").addEventListener("click", function () {
+        document.getElementById("imgSelector").value = "Michael";
+      });
+      document.getElementById("imagem4").addEventListener("click", function () {
+        document.getElementById("imgSelector").value = "Rafa";
+      });
+      document.getElementById("imagem5").addEventListener("click", function () {
+        document.getElementById("imgSelector").value = "Ângelo";
+      });
+    </script>
   </body>
 </html>
