@@ -10,7 +10,6 @@
 ## Estrutura de arquivo
 
 ```
-paper-kit-2
 ├── CHANGELOG.md
 ├── LICENSE.md
 ├── README.md
@@ -18,7 +17,7 @@ paper-kit-2
 │   ├── css
 │   │   ├── bootstrap.min.css
 │   │   ├── demo.css
-│   │   └── paper-kit.css
+│   │   └── pacote.css
 │   ├── img
 │   ├── js
 │   │   ├── bootstrap-datetimepicker.min.js
@@ -28,7 +27,7 @@ paper-kit-2
 │   │   ├── jquery-ui-1.12.1.custom.min.js
 │   │   ├── moment.min.js
 │   │   ├── nouislider.js
-│   │   ├── paper-kit.js
+│   │   ├── pacote.js
 │   │   └── popper.min.js
 │   └── sass
 ├── documentation
